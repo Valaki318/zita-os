@@ -3,5 +3,21 @@
 version = 4
 
 [[package]]
+name = "bootloader"
+version = "0.9.33"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7bdfddac270bbdd45903296bc1caf29a7fdce6b326aaf0bbab7f04c5f98b7447"
+
+[[package]]
+name = "volatile"
+version = "0.2.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f6b06ad3ed06fef1713569d547cdbdb439eafed76341820fb0e0344f29a41945"
+
+[[package]]
 name = "zita_os"
 version = "0.1.0"
+dependencies = [
+ "bootloader",
+ "volatile",
+]
